@@ -1,0 +1,144 @@
+body{   
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+#container{
+    width:100%;
+    margin: 0px auto;
+}
+header{
+    background: #143460;
+    min-height: 250px;
+    width: 100%;
+    margin: 0%;
+    text-align: center;
+    line-height: 200px;
+}
+#logo {
+    width: 200px;
+    float: left;
+    margin-top: 0;
+    margin-left: 50px;
+  }
+#h1 {
+    color:white;
+    padding-top: 30px;
+}
+nav{
+    background: #7e95c9;
+    height: 50px;
+}
+nav ul li{
+    float: left;
+    list-style: none;
+    margin: 10px;
+    line-height: 30px;
+
+}
+nav ul li a{
+    text-decoration: none;
+}
+#content{
+    float:left;
+    width: 80%;
+}
+aside{
+    float:left;
+    width: 20%;
+    background: #7e95c9;
+}
+#yamaha{
+    text-align: center;
+    float: left;
+}
+#honda{
+    text-align: center;
+    float: left;
+}
+#aprilia{
+    text-align: center;
+    float: left;
+}
+#kawasaki{
+    text-align: center;
+    float: left;
+}
+#vespa{
+    text-align: center;
+    float: left;
+}
+.clearfix{
+    clear:both;
+}
+
+
+#name{
+    padding-left: 10px ;
+}
+#mail{
+    padding-left: 10px ;
+}
+#bike{
+    padding-left: 10px ;
+}
+#weeks{
+    padding-left: 10px ;
+}
+#casco{
+    padding-left: 10px ;
+    padding-bottom: 10px;
+}
+
+#returnFinalPrice{
+    padding-left: 10px ;
+}
+#grid-container{
+    background-color: #7e95c9;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+}
+#reservaEstado{
+    padding-left: 10px;
+}
+#boton{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 40px;
+    background: rgb(240, 176, 80);
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    border: none;
+    transition: .3s ease all;
+    border-radius: 5px;
+}
+#arribaBtn{
+    margin-left: 42%;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    background: rgb(240, 176, 80);
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    border: none;
+    transition: .3s ease all;
+    border-radius: 5px;
+}
+footer{
+    color:white;
+    text-align: center;
+    background: #143460;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+}
+
+@media (max-width:1180px){
+    header{
+        flex-direction: column;
+    }
+    body{
+        flex-direction: column;
+    }
+}
