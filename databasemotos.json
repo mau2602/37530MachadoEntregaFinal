@@ -1,0 +1,32 @@
+
+    {
+        "marca" : "Yamaha",
+        "modelo" : "xMax",
+        "cilindrada" : 300,
+        "precio" : 175
+    },
+    {
+        "marca" : "Honda",
+        "modelo" : "PCX",
+        "cilindrada" : 125,
+        "precio" : 140
+    },
+    {
+        "marca" : "Aprilia",
+        "modelo" : "Motard",
+        "cilindrada" : 150,
+        "precio" : 155
+    },
+    {
+        "marca" : "Kawasaki",
+        "modelo" : "Ninja",
+        "cilindrada" : 650,
+        "precio" : 400
+    },
+    {
+        "marca" : "Vespa",
+        "modelo" : "Primavera",
+        "cilindrada" : 125,
+        "precio" : 125
+    }
+] 
