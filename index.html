@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+         <meta charset="UTF-8">
+         <title id="title" >MOTORBIKES RENTAL</title>
+         <link rel="stylesheet" href="styles.css"/>
+         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">    
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/luxon@3.0.1/build/global/luxon.min.js"></script>
+        <script src="https://tholman.com/elevator.js/elevator.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>        
+        <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+      </head>
+      <body style="background-color:white;"></bodystyle> 
+          <div id="container">
+            <header>
+              <section id="logo">
+                <img src="Orange and White Badge Moto Club Logo.png" alt="Logo">
+              </section>
+              <h1 id="h1" style="font-size: 70px">MOTORBIKES RENTAL </h1>   
+            </header>
+            <nav>
+              <ul>
+                <li>
+                  <a href= "37530MachadoImgYamaha.html">    
+                    Galería
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="clearfix"></div>
+            <aside id= "barraLateral">
+            <div id="reservaEstado">
+            <h1> Estado de la reserva</h1>
+              <p id="estadoReserva"> Aun no tiene una moto reservada</p>
+            </div>
+            </aside>
+            <div id = "content">
+            <div id="yamaha">
+              <img src="xmax300-2.jpg">
+              <h4>YAMAHA dMax 300cc.</h4>
+            </div>
+            <br><br>
+            <div id="honda">
+              <img src="honda-pcx125.jpg"> 
+              <h4>HONDA PCX 125cc.</h4>
+            </div>
+            <br><br>
+            <div id="aprilia">        
+              <img src="aprilia-1.jpg">
+              <h4>APRILIA Motard 150.</h4>
+            </div>
+            <br><br>
+            <div id="kawasaki">          
+              <img src="ninjaFront.jpg">
+              <h4>KAWASAKI Ninja 650cc.</h4>
+            </div>
+            <br><br>
+            <div id="vespa">
+              <img src="vespita4.jpg">
+              <h4>PIAGGIO Vespa Primavera 125cc.</h4>
+            </div>
+          </div>
+            <br>
+            <p id="returnFinalPrice">Completa los datos para realizar la reserva.</p>
+            <br>
+          <div id="grid-container">
+            <div id="name">
+             <p>Nombre</p> 
+             <input type=text id = "nombre1" >
+            </div>
+            <div id="lastname">
+              <p>Apellido</p>
+              <input type=text id = "apellido1" >
+            </div>
+            <div id="mail">
+              <p>E-mail</p>
+              <input type=text id = "correo1" >
+            </div>
+            <div id="bike">
+              <p> Seleccione la moto deseada</p>
+              <select id= "selectBike"> 
+                <option value = "1">Yamaha dMax 300cc</option>
+                <option value = "2">Honda PCX 125cc</option>
+                <option value = "3">Aprilia Motard 125cc</option>
+                <option value = "4">Kawasaki Ninja 650cc</option>
+                <option value = "5">Vespa Primavera 125cc</option>
+              </select>
+            </div>
+            <div id="weeks">
+              <p> Seleccione la duración del alquiler (semanas)</p>
+              <input type="number" min=1 id = "rentTime">
+            </div>
+            <div id="casco">
+              <p> Desea un casco extra?</p>
+              <select id= "helmet" > 
+                <option value = "si"> SI </option>
+                <option value = "no"> NO </option>
+              </select>
+            </div>
+          </div>
+          <br><br>         
+          <button id="boton" onclick="show()"><span>RESERVAR</span></button>
+          <br><br>
+          <br><br>
+          <button id="arribaBtn"><span>VOLVER ARRIBA</span></button>
+         <footer>
+          MOTORBIKES RENTAL SIMULATOR - Coderhouse 2022
+         </footer>
+         <script src="37530MachadoEntregaFinal.js"></script>
+        </div>   
+      </body>
+ </html> 
