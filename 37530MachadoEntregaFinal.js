@@ -1,23 +1,20 @@
 // DESARROLLO DE UNA PLATAFORMA DE ALQUILER DE MOTOS.
 
-var nombre1 = ""
-var apellido1 = ""
-var correo1 = ""
-var weeksEntry = ""
 
 
 function show(){
       
         // Capturamos los datos del cliente y la reserva
-        var nombre1 = document.getElementById("nombre1").value;
-        var apellido1 = document.getElementById("apellido1").value;
-        var correo1 = document.getElementById("correo1").value;
-        var bikes = parseInt(document.getElementById("selectBike").value);
-        var weeksEntry = parseInt(document.getElementById("rentTime").value);
-        var geoLoc = ("Palma de Mallorca");
-        var extraHelmet = document.getElementById("helmet").value;
+        let nombre1 = document.getElementById("nombre1").value;
+        let apellido1 = document.getElementById("apellido1").value;
+        let correo1 = document.getElementById("correo1").value;
+        let bikes = parseInt(document.getElementById("selectBike").value);
+        let weeksEntry = parseInt(document.getElementById("rentTime").value);
+        let geoLoc = ("Palma de Mallorca");
+        let extraHelmet = document.getElementById("helmet").value;
+        let moto = "";
         
-    if (nombre1 != "" && apellido1 != "" && correo1 != "" && weeksEntry != ""){
+    if (nombre1 !== "" && apellido1 !== "" && correo1 !== "" && weeksEntry !== ""){
     
    const getMoto = async () => {
   
@@ -26,7 +23,7 @@ function show(){
 
     // Asignacion del objeto moto a la eleccion del cliente
     if (bikes === 1){
-       var moto = (data[0]);
+       moto = (data[0]);
     } else if (bikes === 2){
        moto = (data[1]);
     } else if (bikes === 3){
@@ -74,9 +71,9 @@ function show(){
 
     // obtenemos las fechas de alquiler y devolucion de la moto mediante libreria Luxon
     DateTime = luxon.DateTime;
-    var fechaHoy = DateTime.now()
+    let fechaHoy = DateTime.now()
     fechaHoy = (fechaHoy.toFormat('dd LLL yyyy'));
-    var devolucion = (DateTime.now().plus({ days: (weeksEntry * 7) }));
+    let devolucion = (DateTime.now().plus({ days: (weeksEntry * 7) }));
     devolucion = (devolucion.toFormat('dd LLL yyyy'));
     devolucion = devolucion.toLocaleString();
    
@@ -86,7 +83,7 @@ function show(){
     //-----------------------------------------------------
     
     // Mostramos el resumen de la reserva.
-    var finalText = document.getElementById("returnFinalPrice");
+    let finalText = document.getElementById("returnFinalPrice");
     
     if (weeksEntry == 1){
     finalText.innerText = `¡Felicitaciones! 
@@ -100,14 +97,14 @@ function show(){
     }
     
     // Almacenamiento del objeto 'cliente' en localStorage.
-    var alqCliente = {"nombre": cliente1.nombre, "apellido": cliente1.apellido, "correo": cliente1.correo, "motoMarca": cliente1.newMoto.marca, "motoModelo": cliente1.newMoto.modelo, "motoCilindrada": cliente1.newMoto.cilindrada, "fecha": devolucion, "precio": cliente1.newMoto.precio + extraHelmet}
-    var alqClienteJsonSt = JSON.stringify(alqCliente)
+    let alqCliente = {"nombre": cliente1.nombre, "apellido": cliente1.apellido, "correo": cliente1.correo, "motoMarca": cliente1.newMoto.marca, "motoModelo": cliente1.newMoto.modelo, "motoCilindrada": cliente1.newMoto.cilindrada, "fecha": devolucion, "precio": cliente1.newMoto.precio + extraHelmet}
+    let alqClienteJsonSt = JSON.stringify(alqCliente)
     localStorage.setItem(cliente1.apellido, alqClienteJsonSt);
 
     // Reemplazamos el texto del estado de la reserva
-    var clienteStr = localStorage.getItem(cliente1.apellido);
-    var clienteStr1 = JSON.parse(clienteStr);
-    var estadoReserva = document.getElementById("estadoReserva");
+    let clienteStr = localStorage.getItem(cliente1.apellido);
+    let clienteStr1 = JSON.parse(clienteStr);
+    let estadoReserva = document.getElementById("estadoReserva");
     estadoReserva.innerText = (`Tu reserva es: 
 
     Nombre: ${clienteStr1.nombre} 
